@@ -1,7 +1,7 @@
 # Wayfare 🌤️💱
 
 Wayfare is a modern and responsive web application designed for travelers to check essential trip details: current weather conditions and live currency exchange rates.
-
+Live Demo: [https://Ethonise.github.io/wayfare-weather-currency-app/]
 ### 🚀 Tech Stack
 * Frontend: Vanilla JavaScript (ES6+), HTML5, CSS3
 * APIs: Open-Meteo API & Frankfurter API
