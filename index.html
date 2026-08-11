@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayfare — weather & currency, before you go</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="wrap">
+  <div class="logo">Wayfare <span>· travel readouts</span></div>
+  <p class="tagline">Two things worth checking before any trip: the weather, and what your money's actually worth there.</p>
+</header>
+
+<main class="wrap panels">
+
+  <!-- WEATHER PANEL -->
+  <section class="panel panel-weather">
+    <div class="panel-head">
+      <span class="panel-label">01 / weather</span>
+      <span class="panel-dot"></span>
+    </div>
+    <form id="weather-form" class="panel-form">
+      <input type="text" id="city-input" placeholder="Type a city…" autocomplete="off" required>
+      <button type="submit" class="btn">Check</button>
+    </form>
+    <div id="weather-result" class="readout">
+      <p class="readout-empty">Search a city to see current conditions.</p>
+    </div>
+  </section>
+
+  <!-- CURRENCY PANEL -->
+  <section class="panel panel-currency">
+    <div class="panel-head">
+      <span class="panel-label">02 / currency</span>
+      <span class="panel-dot"></span>
+    </div>
+    <form id="currency-form" class="panel-form currency-form">
+      <input type="number" id="amount-input" value="100" min="0" step="any" required>
+      <select id="from-currency"></select>
+      <span class="arrow">→</span>
+      <select id="to-currency"></select>
+      <button type="submit" class="btn">Convert</button>
+    </form>
+    <div id="currency-result" class="readout">
+      <p class="readout-empty">Pick two currencies to convert between.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>Weather data: Open-Meteo</span>
+  <span>Exchange rates: Frankfurter</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
